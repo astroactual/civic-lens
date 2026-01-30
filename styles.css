@@ -1,10 +1,56 @@
-/* CSS by ///ADD/// YOUR NAME */
+/* CSS by MATTHEW ADCOCK */
 
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-/* ///ADD/// CSS Reset */
-
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 /* Root Variables */
 :root {
@@ -39,12 +85,118 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+#skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+ 
+#skip:focus{
+  position: static;
+  width: auto;
+  height: auto;
+}
 
 /* ///ADD/// Navigation Styles */
 
+.mobile-nav{
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  font-family: var(--font-body);
+}
+
+.menu-button{
+  display: block;
+  width: 93%;
+  margin: 1rem auto;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid var(--blue-bulletin);
+  transition: background-color 1s ease;
+}
+
+.menu{
+  display: none;
+  background-color: var(--blue-bulletin);
+  min-width: 200px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.menu a{
+  color: var(--watchdog-white);
+  background-color: var(--news-flash);
+  padding: 0.5rem;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid var(--blue-bulletin);
+  transition: background-color 1s ease;
+}
+
+.menu a:hover, .menu-button:hover{
+  background-color: var(--blue-bulletin);
+  border: 1px solid var(--news-flash)
+}
+
+input:checked ~ .menu{
+  display: block;
+  margin: 0 auto;
+  width: 94%;
+  font-size: 1rem;
+  box-shadow: -0.5rem 0.5rem 2rem 0.2rem var(--truth-text)
+  
+}
+
 /* ///ADD/// Global Layout Styles */
+header{
+  background-color: var(--blue-bulletin);
+  font-family: var(--font-heading);
+}
+
 
 /* ///ADD/// Global Text Styles */
+body{
+  min-width: 400px;
+  font-family: var(--font-body);
+}
+
+header{
+  background-color: var(--blue-bulletin);
+  padding: 0.25rem 0;
+  color: var(--watchdog-white);
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: lighter;
+  padding: 1rem;
+}
+
+header p{
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+main{
+  background-color: var(--watchdog-white);
+
+}
+
+
 
 
 /* ///ADD/// medium styles 620px */
