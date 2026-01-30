@@ -195,59 +195,77 @@
           method="POST"
           autocomplete="on"
         >
-          <label for="my-name">Name<span class="required">*</span></label>
-          <input type="text" name="my-name" id="my-name" required />
+          <label for="my-name">Name</label>
+          <input type="text" name="my-name" id="my-name" />
 
-          <label for="my-mobile">Mobile<span class="required">*</span></label>
-          <input type="tel" name="my-mobile" id="my-mobile" required />
+          <label for="my-mobile">Mobile</label>
+          <input type="tel" name="my-mobile" id="my-mobile" />
 
           <fieldset>
             <legend>Notification Preferences</legend>
 
-            <input
-              type="checkbox"
-              value="breaking"
-              name="notif-pref"
-              id="breaking"
-            />
-            <label for="breaking">Breaking News</label>
-            <input
-              type="checkbox"
-              value="politics"
-              name="notif-pref"
-              id="politics"
-            />
-            <label for="politics">Politics</label>
-            <input
-              type="checkbox"
-              value="weather"
-              name="notif-pref"
-              id="weather"
-            />
-            <label for="weather">Weather</label>
-            <input
-              type="checkbox"
-              value="sports"
-              name="notif-pref"
-              id="sports"
-            />
-            <label for="sports">Sports</label>
-            <input
-              type="checkbox"
-              value="entertainment"
-              name="notif-pref"
-              id="entertainment"
-            />
-            <label for="entertainment">Entertainment</label>
-            <input type="checkbox" value="world" name="notif-pref" id="world" />
-            <label for="world">World</label>
-            <input
-              type="checkbox"
-              value="financial"
-              name="notif-pref"
-              id="financial"
-            />
-            <label for="financial">Financial</label>
+            <div id="form-item">
+              <input
+                type="checkbox"
+                value="breaking"
+                name="notif-pref"
+                id="breaking"
+              />
+              <label for="breaking">Breaking News</label>
+              <div id="form-item"></div>
+              <input
+                type="checkbox"
+                value="politics"
+                name="notif-pref"
+                id="politics"
+              />
+              <label for="politics">Politics</label>
+            </div>
+            <div id="form-item">
+              <input
+                type="checkbox"
+                value="weather"
+                name="notif-pref"
+                id="weather"
+              />
+              <label for="weather">Weather</label>
+            </div>
+            <div id="form-item">
+              <input
+                type="checkbox"
+                value="sports"
+                name="notif-pref"
+                id="sports"
+              />
+              <label for="sports">Sports</label>
+            </div>
+            <div id="form-item">
+              <input
+                type="checkbox"
+                value="entertainment"
+                name="notif-pref"
+                id="entertainment"
+              />
+              <label for="entertainment">Entertainment</label>
+            </div>
+            <div id="form-item">
+              <input
+                type="checkbox"
+                value="world"
+                name="notif-pref"
+                id="world"
+              />
+              <label for="world">World</label>
+            </div>
+            <div id="form-item">
+              <input
+                type="checkbox"
+                value="financial"
+                name="notif-pref"
+                id="financial"
+              />
+              <label for="financial">Financial</label>
+            </div>
           </fieldset>
           <input
             type="submit"
@@ -266,9 +284,9 @@
         <button>YouTube</button>
         <button>TikTok</button>
         <button>LinkedIn</button>
-
-        <p>&copy; 2025 Civic Lens. All rights reserved.</p>
       </section>
+
+      <p>&copy; 2025 Civic Lens. All rights reserved.</p>
     </footer>
 
     <script>

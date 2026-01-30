@@ -173,6 +173,7 @@ body{
   min-width: 400px;
   font-family: var(--font-body);
   color: var(--truth-text);
+  background-color: var(--watchdog-white);
 }
 
 header{
@@ -282,6 +283,86 @@ h2 ~ p{
   padding: 0.75rem;
 }
 
+form{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--news-flash);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  color: var(--watchdog-white);
+  border: 1px solid var(--truth-text);
+  box-shadow: var(--shadow);
+}
+
+form label{
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+}
+form input{
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+fieldset{
+  border: 1px solid var(--blue-bulletin);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#form-item{
+  padding: 0.5rem 0;
+}
+
+input[type="checkbox"]{
+  transform: scale(1.5);
+  margin-right: 0.5rem;
+}
+
+fieldset legend{
+  text-transform: uppercase;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+  text-align: center;
+  padding-top: 1rem;
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  text-transform: uppercase;
+  margin: 0.25rem 0 2rem 0;
+  font-size: 1.25rem;
+  box-shadow: var(--shadow); 
+}
+
+footer{
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 2rem 1rem 2rem 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+}
+
+footer button{
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 0.5rem;
+  margin: 1rem 1rem 0 0;
+}
+
+footer p{
+  margin: 0 auto;
+  padding: 4rem 0 0 0;
+  text-align: center;
+  font-size: small;
+}
 
 
 /* ///ADD/// medium styles 620px */
