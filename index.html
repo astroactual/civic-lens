@@ -195,11 +195,13 @@
           method="POST"
           autocomplete="on"
         >
-          <label for="my-name">Name</label>
-          <input type="text" name="my-name" id="my-name" />
+          <div id="form-inputs">
+            <label for="my-name">Name</label>
+            <input type="text" name="my-name" id="my-name" />
 
-          <label for="my-mobile">Mobile</label>
-          <input type="tel" name="my-mobile" id="my-mobile" />
+            <label for="my-mobile">Mobile</label>
+            <input type="tel" name="my-mobile" id="my-mobile" />
+          </div>
 
           <fieldset>
             <legend>Notification Preferences</legend>
@@ -212,7 +214,8 @@
                 id="breaking"
               />
               <label for="breaking">Breaking News</label>
-              <div id="form-item"></div>
+            </div>
+            <div id="form-item">
               <input
                 type="checkbox"
                 value="politics"
