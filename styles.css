@@ -504,7 +504,9 @@ margin-right: 0.25rem;
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
 
-  .menu a{
+  #menu-toggle:has(input[type="checkbox"]:checked){
+
     display: block;
   }
 }
+
